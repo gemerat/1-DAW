@@ -1,0 +1,26 @@
+package areadeuncirculo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author inesb
+ */
+public class Areadeuncirculo {
+    //ejercicio 
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sn = new Scanner (System.in); 
+        System.out.println("Dime el valor del radio de un circulo para calcular su area");
+        double radio = sn.nextDouble();
+        double area = 0;
+        area = Math.PI * (radio * radio);
+        
+        System.out.println("El area del circulo es " + area);
+        
+    }
+    
+}
