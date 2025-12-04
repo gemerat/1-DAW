@@ -1,0 +1,40 @@
+package javaapplication6;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author inesb
+ */
+public class JavaApplication6 {
+
+    /**
+     * @param args the command line arguments
+     */
+  
+    public static void main(String[] args) {
+        // Ejercicio 14
+        // Vamos a sumar la sumas de los digitos de un numero 
+        //Primero pedimos al usuario que inserte un numero de 2 o más digitos
+        System.out.println("Dime un numero n de 2 digitos o más");
+        //declaramos el teclado y la variante n
+        Scanner sn = new Scanner(System.in);
+        int n = sn.nextInt();
+
+        //si el numero que nos dan fuese menor de 0 lo convertimos en positivo
+        if (n < 0) {
+            n = -n;
+        }
+        //declaramos la variable suma y hacemos un bucle para decir que si es mayor de 0 haga lo siguiente:
+        int suma = 0;
+        
+        while (n > 0) {
+        //declaramos la variable digito para que sea el numero n con el porcentaje del 10% para sacar el ultimo numero
+            int digito = n % 10;
+            suma = suma + digito;
+            n = n / 10;
+        }
+        System.out.println("La suma de los digitos es: " + suma);
+    }
+
+}
