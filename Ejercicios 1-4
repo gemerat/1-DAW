@@ -1,0 +1,47 @@
+package javaapplication3;
+
+import java.math.BigInteger;
+import java.util.Scanner;
+
+/**
+ *
+ * @author inesb
+ */
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        //Ejercicio 1
+        System.out.println("Hola Mundo");
+        Scanner sn_teclado = new Scanner(System.in);
+
+        //Ejercicio 2
+        System.out.println("Dime un numero entero para una suma");
+        int numero1 = sn_teclado.nextInt();
+        System.out.println("Ahora dime el otro numero");
+        int numero2 = sn_teclado.nextInt();
+        int resultado = 0;
+        resultado = numero1 + numero2;
+        System.out.println("El resultado es " + resultado);
+
+        //Ejercicio 3
+        if (resultado % 2 == 0) {
+            System.out.println("El numero " + resultado + " es par");
+        } else {
+            System.out.println("El numero " + resultado + " es impar");
+        }
+        //Ejercicio 4
+        System.out.println("Al numero " + resultado + " le vamos a sacar el factorial");
+
+        BigInteger factorial = BigInteger.ONE;
+        for (long i = 1; i <= resultado; i++) {
+            factorial = factorial.multiply(BigInteger.valueOf(i));
+
+        }
+        System.out.println("El factorial de " + resultado + " es " + factorial);
+
+    }
+}
