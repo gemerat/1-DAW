@@ -1,0 +1,26 @@
+package javaapplication7;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author inesb
+ */
+public class JavaApplication7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //Ejercicio 8 convertir de celsius a Farenheit
+  Scanner sn = new Scanner(System.in);
+        System.out.println("Introduce la temperatura de Celsius que quieras pasar a Farenheit");
+        double celsius = sn.nextDouble();
+        double farenheit = celsius * 9 / 5 + 32;
+        
+        System.out.println(celsius + "ºC equivalen a " + farenheit + " ºF");
+        
+        
+    }
+    
+}
