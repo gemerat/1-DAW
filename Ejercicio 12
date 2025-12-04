@@ -1,0 +1,31 @@
+package javaapplication5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author inesb
+ */
+public class JavaApplication5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Ejercicio 12
+        Scanner sn_teclado = new Scanner(System.in);
+
+        System.out.println("Vamos a sacar la tabla de multiplicar de los primeros 20 numeros de un numero que me digas");
+        System.out.println("Dame un numero n para la tabla de multiplicar que quieras");
+
+        int n = sn_teclado.nextInt();
+
+        for (int i = 1; i <= 20; i++) {
+            System.out.println(n + " x " + i + "=" + (n * i));
+
+        
+    }
+        
+    }
+    
+}
